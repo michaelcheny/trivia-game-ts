@@ -73,7 +73,9 @@ const App = () => {
       <Wrapper>
         <h1>Dundundunnnn</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
-          <button onClick={startTrivia}>Start</button>
+          <button onClick={startTrivia} className="start">
+            Start
+          </button>
         ) : null}
         {!gameOver && <p className="score">Score: {score}</p>}
         {loading && <p>Loading Questions...</p>}

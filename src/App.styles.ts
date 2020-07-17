@@ -15,11 +15,13 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #615e59;
   }
 
   * {
     box-sizing: border-box;
     font-family: 'MedievalSharp', cursive;
+    font-size: 26px;
   }
 `;
 
@@ -45,7 +47,7 @@ export const Wrapper = styled.div`
   border: 1px red solid;
   height: 62vh;
   width: 58vh;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 
   > p {
     color: #ff0;
@@ -70,6 +72,21 @@ export const Wrapper = styled.div`
     font-size: 70px;
     font-weight: 400;
     text-align: center;
-    margin: 20px;
+    margin-top: 3rem;
+  }
+
+  .start,
+  .next {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 300ms;
+    background: #baae97;
+    color: #796d5d;
+    &:hover {
+      background: #615e59;
+      color: #e9ddcb;
+      transform: scale(1.1);
+    }
   }
 `;
