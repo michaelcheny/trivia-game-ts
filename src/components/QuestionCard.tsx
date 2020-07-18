@@ -11,25 +11,25 @@ const Container = styled.div`
   .answers-grid {
     display: grid;
     border: 1px green solid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 250px 250px;
 
     grid-gap: 10px;
     width: 90%;
     justify-content: space-evenly;
-  }
-  .selections {
-    /* width: 80vw; */
-    width: 100%;
-    height: 100%;
-    padding: 20px 40px;
-    border-radius: 10px;
-    background: #baae97;
-    color: black;
-    transition: 300ms;
-    &:hover {
-      background: #615e59;
-      color: #e9ddcb;
-      transform: scale(1.1);
+    .selections {
+      /* width: 80vw; */
+      width: 100%;
+      height: 100%;
+      padding: 20px 40px;
+      border-radius: 10px;
+      background: #baae97;
+      color: black;
+      transition: 300ms;
+      &:hover {
+        background: #615e59;
+        color: #e9ddcb;
+        transform: scale(1.1);
+      }
     }
   }
 `;
